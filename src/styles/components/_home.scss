@@ -1,0 +1,33 @@
+#home{
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    section{
+        background-color:rgba(0, 0, 0, 0.7); 
+        height: 80%;
+        width: 35%;
+        padding-left: $md;
+        padding-right: $md;
+        #cube{
+            color: $orange;
+            text-align: center;
+
+        }
+        h1{
+            font-size: $xlg;
+            text-align: center;
+            color: $off-white;
+        }
+        .play-button-container{
+            width: 100%;
+            
+        }
+    }
+    
+}
