@@ -23,11 +23,73 @@
             font-size: $xlg;
             text-align: center;
             color: $off-white;
+            font-family: 'Quicksand', sans-serif;
         }
         .play-button-container{
             width: 100%;
             
+            li a{
+                background-color: $green;
+                color: #fff;
+                border-radius: $button-radius;
+                cursor: pointer;
+                padding: $normal;
+                display: block;
+                text-align: center;
+                transition: 0.3s linear all;
+
+            }
+
+            a.play-button:hover{
+                background-color: darken($green, 10%);
+            }
+            
         }
+        .auth-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: $lg;
+
+            .auth-buttons{
+                color: #fff;
+                cursor: pointer;
+                border-radius: 30px;
+                padding: $normal 0 ;
+                text-align: center;
+                width: 45%;
+                transition: 0.3s linear all;
+
+               
+            }
+            
+            #login-button{
+                background-color: $red;
+                
+            }
+            #login-button:hover{
+                background-color: darken($red, 10%);
+                
+            }
+           
+            
+        }
+        #signup-button{
+            background-color:$blue;
+            
+        }
+        #signup-button:hover{
+            background-color: darken($blue, 10%);
+            
+        }
+
+
+        
+           
+     
+
+
+
     }
     
 }
