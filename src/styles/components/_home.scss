@@ -10,10 +10,11 @@
 
     section{
         background-color:rgba(0, 0, 0, 0.7); 
-        height: 80%;
+        height: 70%;
         width: 35%;
         padding-left: $md;
         padding-right: $md;
+        border-radius: 5px;
         #cube{
             color: $orange;
             text-align: center;
@@ -34,6 +35,7 @@
                 border-radius: $button-radius;
                 cursor: pointer;
                 padding: $normal;
+                margin-top: 10rem;
                 display: block;
                 text-align: center;
                 transition: 0.3s linear all;
@@ -42,14 +44,16 @@
 
             a.play-button:hover{
                 background-color: darken($green, 10%);
+                box-shadow: $shadow;
             }
             
         }
         .auth-container{
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-top: $lg;
+            
 
             .auth-buttons{
                 color: #fff;
@@ -69,6 +73,8 @@
             }
             #login-button:hover{
                 background-color: darken($red, 10%);
+                box-shadow: $shadow;
+
                 
             }
            
@@ -80,16 +86,19 @@
         }
         #signup-button:hover{
             background-color: darken($blue, 10%);
+            box-shadow: $shadow;
+
             
         }
 
-
-        
-           
-     
-
-
-
     }
     
+}
+
+@media(max-width: 768px ){
+    #home section {
+        padding: 0% 0 $normal;
+        width: 100%;
+        height: 100%;
+    }
 }
