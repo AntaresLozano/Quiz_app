@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {Helmet} from 'react-helmet';
 import CubeOutlineIcon from 'mdi-react/CubeOutlineIcon';
 import { Link } from 'react-router-dom';
+// import {ClassComponent, FuntionalComponent} from "./quiz/test";
 
 
 
@@ -12,7 +13,7 @@ const Home = ()=>(
             <section>
                 <div id="cube">
                     <CubeOutlineIcon size={150} />
-                </div>
+                </div>      
                 <h1>Quiz App</h1>
                 <div className="play-button-container" >
                     <ul>
